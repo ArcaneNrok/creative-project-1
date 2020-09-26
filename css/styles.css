@@ -1,0 +1,139 @@
+html{
+  height: 100%;
+}
+body{
+  background-image: linear-gradient(#000,#134);
+  color: #aaa;
+}
+a{
+  color: #f00;
+}
+
+img{
+  background-color: #fff;
+  border-color: #f00;
+  border-style: solid;
+  border-width: thin;
+  margin: 5px;
+}
+
+h1{
+  color: #f00;
+  margin: 20px;
+}
+
+p{
+  margin: 10px;
+  padding: 5px;
+}
+.page{
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.footer{
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 10px;
+  color: #333;
+  padding: 10px;
+  background-color: #111;
+}
+
+.section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 60px;
+  max-width: 500px;
+  font-size: 36px;
+  margin: 10px;
+  font-weight: bold;
+  color: #f00;
+  border-color: #f00;
+  border-style: solid;
+  border-width: thin;
+}
+
+.login{
+  flex-direction: column;
+}
+
+.profile_pic{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.username{
+  color: #f00;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.username img{
+  width: 20px;
+  height: 20px;
+}
+
+.post{
+  margin-bottom: 40px;
+  border-style: solid;
+  border-width: medium;
+  padding: 10px;
+  border-color: #f00;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.response{
+  margin-bottom: 5px;
+  border-width: thin;
+}
+
+.reactions{
+  font-size: 10px;
+  color: #666;
+}
+
+.userview{
+  justify-content: flex-start;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+  .userview{
+    width: 100%;
+  }
+
+  img{
+    width: 50%;
+  }
+}
+
+  /*Desktop*/
+@media only screen and (min-width: 601px){
+  .userview{
+    width: 200px;
+  }
+
+  img{
+    max-height: 200px;
+  }
+
+}
